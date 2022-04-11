@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+         <children>
+            <Label contentDisplay="RIGHT" layoutY="1.0" text="Title:" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+            <Label contentDisplay="RIGHT" layoutY="47.0" text="Director:" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+            <TextField fx:id="director" alignment="CENTER" layoutX="111.0" layoutY="46.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="583.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="4.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <TextField fx:id="title" alignment="CENTER" layoutX="111.0" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="583.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="4.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </TextField>
+            <Label layoutY="100.0" text="Playing time:" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></Label>
+            <Slider fx:id="slider" blockIncrement="0.0" layoutX="112.0" layoutY="103.0" majorTickUnit="30.0" max="360.0" prefHeight="31.0" prefWidth="583.0" showTickLabels="true" showTickMarks="true" AnchorPane.leftAnchor="112.0" AnchorPane.rightAnchor="3.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Slider>
+            <CheckBox fx:id="checkBox" layoutX="287.0" layoutY="151.0" mnemonicParsing="false" text="Own" AnchorPane.bottomAnchor="281.0" AnchorPane.leftAnchor="287.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="151.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding></CheckBox>
+            <Label contentDisplay="RIGHT" layoutX="4.0" layoutY="185.0" text="Comment:" />
+            <TextArea fx:id="comment" layoutX="1.0" layoutY="217.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="217.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+      <HBox alignment="BOTTOM_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#CreatePressed" text="Create" />
+            <Button mnemonicParsing="false" onAction="#CancelPressed" text="Cancel" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
